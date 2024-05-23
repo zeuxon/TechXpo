@@ -96,7 +96,7 @@ gsap.to("#loc-img", {
         end: "bottom 30%",
     },
     x: 0,
-    opacity: .7,
+    opacity: 1,
     duration: 5
 });
 
