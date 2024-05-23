@@ -63,6 +63,7 @@ const date = document.getElementById('date');
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 gsap.to("#date", {
     scrollTrigger: {
         trigger: "#date",
@@ -97,7 +98,7 @@ gsap.to("#loc-img", {
     },
     x: 0,
     opacity: 1,
-    duration: 5
+    duration: 5,
 });
 
 gsap.to("#loc-alt", {
@@ -113,3 +114,26 @@ gsap.to("#loc-alt", {
     duration: 5
 });
 
+gsap.to("#id", {
+    scrollTrigger: {
+        trigger: "#id",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+    },
+    x: 100, 
+    duration: 1,
+});
+
+gsap.to("#id", {
+    scrollTrigger: {
+        trigger: "#id",
+        markers: true,
+        start: "top +=400",
+        end: "+=200",
+        scrub: true,
+    },
+    scale: 5,
+    duration: 1,
+});
