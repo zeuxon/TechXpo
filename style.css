@@ -96,8 +96,8 @@ main {
 }
 
 .big-text {
-    font-size: 15rem;
-    color: #EF233C;
+    font-size: 13rem;
+    color: #d0cfcf;
     text-align: center;
     line-height: 12rem;
 }
@@ -113,7 +113,7 @@ main {
 #loc-img {
     height: 100vh;
     width: 100vw;
-    transform: translateX(-100vw);
+    /* transform: translateX(-100vw); */
     opacity: 0;
     
 }
@@ -122,7 +122,7 @@ main {
     position: absolute;
     transform: translateY(30vh);
     font-size: 1rem;
-    color: #d01b30;
+    color: #d0cfcf;
     font-weight: 600;
     text-shadow: #1a1a1a 1px 1px 10px;
     opacity: 0;
