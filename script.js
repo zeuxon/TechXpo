@@ -49,7 +49,6 @@ var cursorOnDiv = true;
             $('#cursor-follow').css({
                 left:  e.pageX-350,
                 top:   e.pageY-180,
-                cursor: 'pointer'
              });
         }
     });
@@ -81,10 +80,10 @@ gsap.to("#location", {
     scrollTrigger: {
         trigger: "#location",
         scrub: true,
-        start: "top 40%",
+        start: "top 60%",
         end: "top 0%",
     },
-    scale: 1.8,
+    scale: 1.7,
     opacity: 1,
     duration: 5
 });
@@ -93,13 +92,24 @@ gsap.to("#loc-img", {
     scrollTrigger: {
         trigger: "#location",
         scrub: true,
-        start: "top 30%",
+        start: "top 60%",
         end: "bottom 30%",
     },
     x: 0,
-    opacity: 1,
+    opacity: .7,
     duration: 5
 });
 
-
+gsap.to("#loc-alt", {
+    scrollTrigger: {
+        trigger: "#loc-alt",
+        scrub: true,
+        start: "top 30%",
+        end: "+=300",
+    },
+    x: 0,
+    opacity: 1,
+    scale: 5,
+    duration: 5
+});
 
