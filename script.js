@@ -8,15 +8,40 @@ window.onload = function() {
     setInterval(checkCursor, 100);
 }
 
+// function titleChange() {
+//     heroTitleImgs.src = "imgs/img1.png";
+//     heroTitleImgs.style.display = "block";
+//     heroTitleChange.innerHTML = "";
+//     setTimeout(function() {
+//         heroTitleImgs.src = "imgs/img2.png";
+//         setTimeout(function() {
+//             heroTitleImgs.src = "imgs/img3.png";
+//             setTimeout(function() {
+//                 heroTitleImgs.style.display = "none";
+//                 heroTitleChange.innerHTML = "T";
+//                 setTimeout(function() {
+//                     heroTitleImgs.style.display = "none";
+//                     heroTitleChange.innerHTML = "Te";
+//                     setTimeout(function() {
+//                         heroTitleImgs.style.display = "none";
+//                         heroTitleChange.innerHTML = "Tec";
+//                         setTimeout(function() {
+//                             heroTitleImgs.style.display = "none";
+//                             heroTitleChange.innerHTML = "Tech";
+//                         }, 150);
+//                     }, 150);
+//                 }, 150);
+                
+//             }, 300);
+//         }, 300);
+//     }, 300);
+
+// } 
+
 function titleChange() {
     heroTitleImgs.src = "imgs/img1.png";
     heroTitleImgs.style.display = "block";
     heroTitleChange.innerHTML = "";
-    setTimeout(function() {
-        heroTitleImgs.src = "imgs/img2.png";
-        setTimeout(function() {
-            heroTitleImgs.src = "imgs/img3.png";
-            setTimeout(function() {
                 heroTitleImgs.style.display = "none";
                 heroTitleChange.innerHTML = "T";
                 setTimeout(function() {
@@ -28,14 +53,9 @@ function titleChange() {
                         setTimeout(function() {
                             heroTitleImgs.style.display = "none";
                             heroTitleChange.innerHTML = "Tech";
-                        }, 150);
-                    }, 150);
-                }, 150);
-                
-            }, 300);
-        }, 300);
-    }, 300);
-
+                        }, 200);
+                    }, 200);
+                }, 200);
 } 
 
 var cursorOnDiv = true;
@@ -95,6 +115,7 @@ gsap.to("#loc-img", {
         scrub: true,
         start: "top 60%",
         end: "bottom 30%",
+
     },
     x: 0,
     opacity: 1,
@@ -114,26 +135,76 @@ gsap.to("#loc-alt", {
     duration: 5
 });
 
-gsap.to("#id", {
-    scrollTrigger: {
-        trigger: "#id",
-        markers: true,
-        start: "top center",
-        end: "bottom center",
-        scrub: true,
-    },
-    x: 100, 
-    duration: 1,
-});
+var h = window.innerHeight/2;
+var w = window.innerWidth/2;
 
 gsap.to("#id", {
     scrollTrigger: {
         trigger: "#id",
-        markers: true,
-        start: "top +=400",
-        end: "+=200",
+        start: "top center",
+        end: "+=300",
         scrub: true,
     },
-    scale: 5,
+    x: w,
+    y: h,
+    opacity: 1, 
+    duration: 5,
+});
+
+gsap.to("#features", {
+    scrollTrigger: {
+        trigger: "#features",
+        start: "top center",
+        end: "bottom bottom",
+        scrub: true,
+        snap: true
+    },
+    duration: 5,
+});
+
+gsap.from("#feature1", {opacity: 0});
+
+
+gsap.to("#feature1", {
+    scrollTrigger: {
+        trigger: "#feature1",
+        markers: true,
+        start: "top +=500",
+        end: "+=200",
+        scrub: true,
+        snap: true
+    },
+    x: "-90vw",
+    y: 0,
+    opacity: 1, 
+    duration: 8,
+});
+
+gsap.to("#feature1", {
+    scrollTrigger: {
+        trigger: "#feature1",
+        markers: true,
+        start: "top +=300",
+        end: "+=400",
+        scrub: true,
+        snap: true
+    },
+    opacity: 0, 
     duration: 1,
 });
+
+
+// gsap.to("#feature2", {
+//     scrollTrigger: {
+//         trigger: "#feature1",
+//         markers: true,
+//         start: "top +=200",
+//         end: "+=300",
+//         scrub: true,
+//         snap: true
+//     },
+//     x: "90vw",
+//     y: 0,
+//     opacity: 1, 
+//     duration: 8,
+// });
