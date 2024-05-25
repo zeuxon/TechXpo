@@ -151,47 +151,80 @@ gsap.to("#id", {
     duration: 5,
 });
 
-gsap.to("#features", {
-    scrollTrigger: {
-        trigger: "#features",
-        start: "top center",
-        end: "bottom bottom",
-        scrub: true,
-        snap: true
-    },
-    duration: 5,
-});
+// gsap.to("#features", {
+//     scrollTrigger: {
+//         trigger: "#features",
+//         start: "top center",
+//         end: "bottom bottom",
+//         scrub: true,
+//         snap: true
+//     },
+//     duration: 5,
+// });
 
-gsap.from("#feature1", {opacity: 0});
+// gsap.from("#feature1", {opacity: 0});
 
 
 gsap.to("#feature1", {
     scrollTrigger: {
         trigger: "#feature1",
         markers: true,
-        start: "top +=500",
+        start: "top 600",
         end: "+=200",
         scrub: true,
-        snap: true
     },
-    x: "-90vw",
-    y: 0,
     opacity: 1, 
     duration: 8,
 });
 
-gsap.to("#feature1", {
+gsap.to("#feature2", {
     scrollTrigger: {
-        trigger: "#feature1",
+        trigger: "#feature2",
         markers: true,
-        start: "top +=300",
-        end: "+=400",
+        start: "top 400",
+        end: "+=200",
         scrub: true,
-        snap: true
     },
-    opacity: 0, 
-    duration: 1,
+    opacity: 1, 
+    duration: 8,
 });
+
+gsap.to("#feature3", {
+    scrollTrigger: {
+        trigger: "#feature3",
+        markers: true,
+        start: "top 200",
+        end: "+=200",
+        scrub: true,
+    },
+    opacity: 1, 
+    duration: 8,
+});
+
+gsap.to("#feature4", {
+    scrollTrigger: {
+        trigger: "#feature4",
+        markers: true,
+        start: "top 0",
+        end: "+=200",
+        scrub: true,
+    },
+    opacity: 1, 
+    duration: 8,
+});
+
+// gsap.to("#feature1", {
+//     scrollTrigger: {
+//         trigger: "#feature1",
+//         markers: true,
+//         start: "top +=300",
+//         end: "+=400",
+//         scrub: true,
+//         snap: true
+//     },
+//     opacity: 0, 
+//     duration: 1,
+// });
 
 
 // gsap.to("#feature2", {
