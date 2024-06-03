@@ -155,7 +155,7 @@ main {
     display: flex;
     gap: 4rem;
     justify-content: center;
-    position: sticky;
+    /* position: sticky; */
     top: 30%;
 }
 
@@ -191,11 +191,14 @@ main {
 }
 
 #feature-line {
-    width: 80%;
-    height: 4px;
-    background: #AB1212;
+    width: 4px;
+    height: 70%;
     position: absolute;
-    transform: translateY(-2rem);
+    /* transform: translateY(-2rem); */
+    background-image: linear-gradient(rgb(255, 0, 0) 33%, rgba(255,255,255,0) 0%);
+background-position: right;
+background-size: 4px 25px;
+background-repeat: repeat-y;
 }
 
 #feature-ball {
@@ -204,7 +207,7 @@ main {
     background: blue;
     border-radius: 50%;
     position: absolute;
-    transform: translateY(-1rem);
+    transform: translateX(-14px);
 }
 
 #feature1 {
@@ -221,4 +224,21 @@ main {
 
 #feature4 {
 
+}
+
+.feature-first {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 4vw;
+}
+
+.feature-second {
+    margin-top: 15vh;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4vw;
 }

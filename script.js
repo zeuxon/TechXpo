@@ -179,19 +179,7 @@ gsap.to("#feature1", {
 
 gsap.to("#feature2", {
     scrollTrigger: {
-        trigger: "#feature2",
-        markers: true,
-        start: "top 400",
-        end: "+=200",
-        scrub: true,
-    },
-    opacity: 1, 
-    duration: 8,
-});
-
-gsap.to("#feature3", {
-    scrollTrigger: {
-        trigger: "#feature3",
+        trigger: "#feature1",
         markers: true,
         start: "top 200",
         end: "+=200",
@@ -201,9 +189,21 @@ gsap.to("#feature3", {
     duration: 8,
 });
 
+gsap.to("#feature3", {
+    scrollTrigger: {
+        trigger: "#feature1",
+        markers: true,
+        start: "top 400",
+        end: "+=200",
+        scrub: true,
+    },
+    opacity: 1, 
+    duration: 8,
+});
+
 gsap.to("#feature4", {
     scrollTrigger: {
-        trigger: "#feature4",
+        trigger: "#feature1",
         markers: true,
         start: "top 0",
         end: "+=200",
@@ -241,3 +241,15 @@ gsap.to("#feature4", {
 //     opacity: 1, 
 //     duration: 8,
 // });
+
+gsap.to("#feature-ball", {
+    scrollTrigger: {
+        trigger: "#feature1",
+        markers: true,
+        start: "top 400",
+        end: "+=600",
+        scrub: true,
+    },
+    y: "70vh",
+    duration: 150,
+});
