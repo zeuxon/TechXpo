@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechXpo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/X.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -78,18 +79,28 @@
                 <h1>Registration Form</h1>
                 <div class="registration">
                     <form action="">
-                        <label>Name:
-                            <input type="text" name="name" required>
-                        </label>
-                        <label>Email:
-                            <input type="email" name="email" required>
-                        </label>
-                        <label>Role/Position:
-                            <input type="text" name="role" required>
-                        </label>
-                        <label>Number of Attendees:
-                            <input type="number" name="noa" required>
-                        </label>
+
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name:" required>
+                            <label>Name:</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email:" required>
+                            <label>Email:</label>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" name="role" placeholder="Role/Position:" required>
+                            <label>Role/Position:</label>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="number" name="noa" placeholder="Number of Attendees:" required>
+                            <label>Number of Attendees:</label>
+                        </div>
+
                     </form>
                     <div class="registration-info">
                         <h1>Limited Seats Available!</h1>

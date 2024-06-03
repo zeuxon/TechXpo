@@ -266,14 +266,77 @@ main {
 .registration-container {
     width: 80vw;
     margin: 10rem auto 0 auto;
-    background: red;
 }
 
 .registration-container h1 {
     color: #f4f4f4;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .registration-container form {
     background: #3A3D56;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+
+.registration {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+
+.registration form label {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: .3s;
+    color: #f4f4f4;
+}
+
+.registration form input {
+    width: 50%;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.registration form input::placeholder {
+    color:#8D99AE;
+    transition: .3s;
+}
+
+.registration form input:focus::placeholder {
+    color: transparent;
+    transition: .3s;
+}
+
+.registration form input:focus + label {
+    opacity: 1;
+    transition: .3s;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.registration-info h1 {
+    background: -webkit-linear-gradient(45deg, #EF233C, #E25B6C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.registration-info h2 {
+    color: #8D99AE;
+    margin-bottom: 1rem;
+}
+
+.registration-info p {
+    color: #EF233C;
+    font-weight: 600;
+    margin-bottom: .5rem;
 }
