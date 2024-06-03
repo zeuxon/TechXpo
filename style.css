@@ -263,16 +263,17 @@ main {
     color: #AB1212;
 }
 
-.registration {
+.registration-container {
     width: 80vw;
     margin: 10rem auto 0 auto;
     background: red;
 }
 
-.registration h1 {
+.registration-container h1 {
     color: #f4f4f4;
+    margin-bottom: 5rem;
 }
 
-.registration form {
+.registration-container form {
     background: #3A3D56;
 }
