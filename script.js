@@ -89,20 +89,20 @@ gsap.to("#date", {
         trigger: "#date",
         scrub: true,
         start: "top 40%",
-        end: "bottom 30%",
+        end: "bottom 0",
         pin: true
     },
     scale: 2,
     opacity: 0,
-    duration: 5
+    duration: 15
 });
 
 gsap.to("#location", {
     scrollTrigger: {
         trigger: "#location",
         scrub: true,
-        start: "top 60%",
-        end: "top 0%",
+        start: "top 0",
+        end: "+=400",
     },
     scale: 1.7,
     opacity: 1,
@@ -113,13 +113,13 @@ gsap.to("#loc-img", {
     scrollTrigger: {
         trigger: "#location",
         scrub: true,
-        start: "top 60%",
-        end: "bottom 30%",
+        start: "top 0",
+        end: "+=400",
 
     },
     x: 0,
     opacity: 1,
-    duration: 5,
+    duration: 15,
 });
 
 gsap.to("#loc-alt", {
@@ -253,7 +253,7 @@ gsap.to("#description", {
     scrollTrigger: {
         trigger: "#description",
         start: "top 700",
-        end: "+=200",
+        end: "+=400",
         scrub: true,
     },
     opacity: 1,
