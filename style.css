@@ -185,16 +185,41 @@ main {
     height: 110vh;
 }
 
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
 #blob1 {
     position: absolute;
-    right: 0;
+    right: -15rem;
+    -webkit-animation: rotate-center 25s linear infinite both;
+	        animation: rotate-center 25s linear infinite both;
 }
 
 #blob2 {
     position: absolute;
-    left: 0;
-    transform: translateY(70vh) scale(1.6);
-
+    left: -15rem;
+    /* transform: translateY(75vh) scale(1.6); */
+    margin-top: 50vh;
+    -webkit-animation: rotate-center 25s linear infinite both;
+    animation: rotate-center 25s linear infinite both;
 }
 
 #feature-line {
@@ -341,3 +366,4 @@ main {
     font-weight: 600;
     margin-bottom: .5rem;
 }
+
