@@ -39,19 +39,13 @@ window.onload = function() {
 // } 
 
 function titleChange() {
-    heroTitleImgs.src = "imgs/img1.png";
-    heroTitleImgs.style.display = "block";
     heroTitleChange.innerHTML = "";
-                heroTitleImgs.style.display = "none";
                 heroTitleChange.innerHTML = "T";
                 setTimeout(function() {
-                    heroTitleImgs.style.display = "none";
                     heroTitleChange.innerHTML = "Te";
                     setTimeout(function() {
-                        heroTitleImgs.style.display = "none";
                         heroTitleChange.innerHTML = "Tec";
                         setTimeout(function() {
-                            heroTitleImgs.style.display = "none";
                             heroTitleChange.innerHTML = "Tech";
                         }, 200);
                     }, 200);
@@ -88,12 +82,11 @@ gsap.to("#date", {
     scrollTrigger: {
         trigger: "#date",
         scrub: true,
-        start: "top 40%",
-        end: "bottom 0",
-        pin: true
+        start: "top 100",
+        end: "+=400",
     },
-    scale: 2,
-    opacity: 0,
+    scale: 1.7,
+    opacity: 1,
     duration: 15
 });
 
@@ -247,15 +240,4 @@ gsap.to("#feature-ball", {
     },
     y: "70vh",
     duration: 150,
-});
-
-gsap.to("#description", {
-    scrollTrigger: {
-        trigger: "#description",
-        start: "top 700",
-        end: "+=400",
-        scrub: true,
-    },
-    opacity: 1,
-    duration: 15,
 });
